@@ -129,6 +129,7 @@ There are as many art styles you can try as there are stars in the sky. Here’s
 - Scale: 12
 - Sampling: k_euler
 - Seed: 121000000
+
 **Base prompt:**
 - 1girl, masterpiece, black hair
 
@@ -277,5 +278,12 @@ You can see that more zoom not only gives you camera effects, but increases the 
 - [Shukezouma LoRA](https://civitai.com/models/12597/moxin)
 - [GuoFeng3](https://civitai.com/models/10415)
 
+## Models to try next
+There are a couple of other great models you can try:
 
+[**OrangeMix**](https://huggingface.co/WarriorMama777/OrangeMixs) is a collection of models created by merging other models.
+
+[**BloodOrangeMix**](https://huggingface.co/WarriorMama777/OrangeMixs#bloodorangemix) is quite popular in the Japanese SD community and very good quality.
+
+Check this [full list of anime models](https://rentry.org/sdmodels) for more.
 
