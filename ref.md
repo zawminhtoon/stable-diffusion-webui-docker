@@ -272,6 +272,8 @@ You can see that more zoom not only gives you camera effects, but increases the 
 - [LoRA](https://stable-diffusion-art.com/lora/)
 - [DepthToImage](https://stable-diffusion-art.com/depth-to-image/)
 - [Anything V5](https://civitai.com/models/9409)
+- [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+- [Repair](https://www.flaneer.com/blog/how-to-restore-faces-with-stable-diffusion)
 
 
 ## LoRA
@@ -287,3 +289,43 @@ There are a couple of other great models you can try:
 
 Check this [full list of anime models](https://rentry.org/sdmodels) for more.
 
+## Dreambooth error
+pip install -r ./extensions/sd_dreambooth_extension/requirements.txt
+
+## Keywords
+best quality, masterpiece, highres, 1girl,china dress,Beautiful face,
+Beautiful face,
+hair ornament, solo,looking at viewer,smile,closed mouth,lips
+china dress,dress,hair ornament, necklace, jewelry, long hair, earrings, chinese clothes,
+architecture,east asian architecture,building,outdoors,rooftop,city,cityscape
+
+## Negative Keywords
+NSFW, lowres,bad anatomy,bad hands, text, error, missing fingers,extra digit, fewer digits, cropped, worstquality, low quality, normal quality,jpegartifacts,signature, watermark, username,blurry,bad feet
+
+## sample 1
+```
+best quality, masterpiece, highres, 1girl,china dress,Beautiful face,upon_body, tyndall effect,photorealistic, dark studio, rim lighting, two tone lighting,(high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, volumetric lighting, candid, Photograph, high resolution, 4k, 8k, Bokeh
+Negative prompt: (((simple background))),monochrome ,lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, lowres, bad anatomy, bad hands, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, ugly,pregnant,vore,duplicate,morbid,mut ilated,tran nsexual, hermaphrodite,long neck,mutated hands,poorly drawn hands,poorly drawn face,mutation,deformed,blurry,bad anatomy,bad proportions,malformed limbs,extra limbs,cloned face,disfigured,gross proportions, (((missing arms))),(((missing legs))), (((extra arms))),(((extra legs))),pubic hair, plump,bad legs,error legs,username,blurry,bad feet
+ENSD: 31337, Size: 768x1024, Seed: 2997632279, Model: GuoFeng3.2, Steps: 30, Script: X/Y/Z plot, X Type: Checkpoint name, Sampler: Euler a, X Values: "GuoFeng3.2.safetensors [2537d1a815], GuoFeng3.2_light.safetensors", CFG scale: 7, Clip skip: 2, Model hash: 2537d1a815
+```
+
+## keywords symbol
+left and right parenthesis 
+(pay more attention to the thing in brackets)
+((((the more brackets the more attention))))
+" Multiple parentheses increase the effect. 
+Square brackets [ ] de emphasize, "a little less of this please"
+
+AND vs and
+The prompt parsing knows about an allcaps ANDs and will split the prompt on those and take each subprompt and combine them.
+lowercase and is just another word in the prompt.
+Multiple ANDs they found it would do a step for each subprompt contained by an AND then the next for the next step then the next for the next step sequentially until looping back to the beginning and repeating after all the AND conditions were met. It repeats this until the image has reached it's step limit.
+
+## C
+photorealistic protrait raw color protrait photo, cinematic light, Chinese cosplayer, genshin impact, <lora:xiaorouseeu:0.75>, highres, smile
+Negative prompt: (((simple background))),monochrome ,lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, lowres, bad anatomy, bad hands, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, ugly,pregnant,vore,duplicate,morbid,mut ilated,tran nsexual, hermaphrodite,long neck,mutated hands,poorly drawn hands,poorly drawn face,mutation,deformed,blurry,bad anatomy,bad proportions,malformed limbs,extra limbs,cloned face,disfigured,gross proportions, (((missing arms))),(((missing legs))), (((extra arms))),(((extra legs))),pubic hair, plump,bad legs,error legs,username,blurry,bad feet
+Eta: 0, ENSD: 31337, Size: 640x640, Seed: 4121272565, Model: chilloutmix_NiPrunedFp32, Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 7, Model hash: 95afa0d9ea
+
+## Models
+- [BeautyProMix](https://civitai.com/models/16599/beautypromix)
+- [Protogen x3.4](https://civitai.com/models/3666)
